@@ -7,7 +7,7 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
-        <script src="./data/honeysuckle_plots.js" ></script>
+        <script src="./honeysuckle_plots.js" ></script>
     </head>
     <body>
     <div id="mapid"></div>
@@ -36,11 +36,11 @@ var invisibleIcon = L.divIcon({
 });
 
 L.marker([37.8393, -84.2700], {icon: invisibleIcon}).addTo(map)
-        .bindPopup('<strong>Japanese Honeysuckle in Kentucky</strong><br>' + '<div style="text-align:center;">' + '<img src="./images/lonicera japonica.jpeg" width="80px">' + '</div>')
+        .bindPopup('<strong>Japanese Honeysuckle in Kentucky</strong><br>' + '<div style="text-align:center;">' + '<img src="./lonicera japonica.jpeg" width="80px">' + '</div>')
         .openPopup();
 
     var honeysuckleIcon = L.icon({
-        iconUrl: "./images/download.png",
+        iconUrl: "./download.png",
         iconSize: [40, 40],
         iconAnchor: [20, 40],
         popupAnchor: [0, -40]
